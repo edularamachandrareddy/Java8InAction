@@ -63,6 +63,8 @@ public Person(int pid, String name, String ciyt) {
 	this.name = name;
 	this.ciyt = ciyt;
 }
+public Person()
+{}
 private String ciyt;
 
 }
