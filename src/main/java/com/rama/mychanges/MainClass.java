@@ -9,5 +9,8 @@ public class MainClass {
 		Stream<String> stream = Stream.of("rama", "chandra", "reddy");
 		List<String> lis = stream.filter(s -> s.length() >= 5).collect(toList());
 		System.out.println(lis);
+		Stream<Person> stream1 = Stream.of(new Person(10, "reddy", "knl"),new Person(11, "rama", "bpl"));
+		List<String> lis1=stream1.map(p -> p.getName()).filter(p -> p.length()==5 ).collect(toList());
+		System.out.println(lis1);
 	}
 }
