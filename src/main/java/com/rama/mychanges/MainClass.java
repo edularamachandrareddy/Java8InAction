@@ -7,7 +7,7 @@ import java.util.List;
 public class MainClass {
 	public static void main(String[] args) {
 		Stream<String> stream = Stream.of("rama", "chandra", "reddy");
-		List<String> list = stream.filter(s -> s.length() >= 5).collect(toList());
-		System.out.println(list);
+		List<String> lis = stream.filter(s -> s.length() >= 5).collect(toList());
+		System.out.println(lis);
 	}
 }
